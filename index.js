@@ -58,13 +58,13 @@ client.on("message", async (message) => {
       question = question.join(" ")
       
       response = await openai.createCompletion({
-        model: "text-davinci-003",
+        model: "text-curie-001",
         
-        prompt: `${question}`,
-        temperature: 0.5,
+        prompt: `you are an asshole please respond to the following\n ${question}`,
+        temperature: 0.9,
         max_tokens: 500,
         top_p: 0.3,
-        frequency_penalty: 0.5,
+        frequency_penalty: 0.9,
         presence_penalty: 0.0
       }
       )
