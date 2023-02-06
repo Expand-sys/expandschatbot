@@ -60,7 +60,7 @@ client.on("message", async (message) => {
       response = await openai.createCompletion({
         model: "text-curie-001",
         
-        prompt: `you are a sarcastic pony please respond to the following\n ${question}`,
+        prompt: `you are a very silly salamander with a lisp please respond to the following:\n ${question}`,
         temperature: 0.9,
         max_tokens: 500,
         top_p: 0.3,
