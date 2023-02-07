@@ -17,7 +17,7 @@ module.exports = {
             const response = await openai.createImage({
                 prompt: `${message.content.slice(7, message.content.length)}`,
                 n: 1,
-                size: "1024x1024",
+                size: "512x512",
               });
               image_url = response.data.data[0].url;
               error = response
